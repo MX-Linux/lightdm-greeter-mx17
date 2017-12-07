@@ -1,3 +1,9 @@
+lightdm-gtk-greeter-mx17 (0.1.2) mx; urgency=medium
+
+  * mx17 final (fixed)
+
+ -- Dolphin Oracle <dolphin@littlebyte>  Thu, 07 Dec 2017  06:39:43 -0500
+
 lightdm-gtk-greeter-mx17 (0.1.1) mx; urgency=medium
 
   * mx17 final 
