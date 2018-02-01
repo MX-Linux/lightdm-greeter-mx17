@@ -15,7 +15,7 @@ case "$1" in
     'xft-rgba = rgb'\\n\
     'icon-theme-name = Papirus'\\n\
     'hide-user-image = false'\\n\
-    'indicators = ~host;~spacer;~session;~power;~layout;~a11y'\\n\
+    'indicators = ~host;~spacer;~session;~a11y;~layout;~power'\\n\
     'keyboard = onboard'\\n\
     'a11y-states = ~keyboard'\\n\
     'position = 50%,center 65%,center'\\n\
