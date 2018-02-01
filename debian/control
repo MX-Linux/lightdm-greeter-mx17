@@ -10,6 +10,8 @@ Package: lightdm-gtk-greeter-mx17
 Architecture: all
 Depends: ${misc:Depends},
  lightdm-gtk-greeter ( >> 2.0.1-2mx15+1),
- mx17-artwork
+ mx17-artwork,
+ onboard,
+ onboard-data
 Description: lightdm-gtk-greeter theme and configuration for MX 17
  .

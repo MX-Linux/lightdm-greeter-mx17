@@ -4,6 +4,9 @@ set -e
 
 case "$1" in
   install|upgrade)
+    if [ -e /etc/lightdm/lightdm-gtk-greeter.conf ]; then
+        cp /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf.$(date +%Y%m%H%M%S)
+    fi
     echo -ne '[greeter]'\\n\
     'background = #stretched:/usr/share/backgrounds/MXLinux/lightdm/myreflections_by_ant_ony/login.jpg'\\n\
     'theme-name = Blackbird'\\n\
@@ -12,7 +15,9 @@ case "$1" in
     'xft-rgba = rgb'\\n\
     'icon-theme-name = Papirus'\\n\
     'hide-user-image = false'\\n\
-    'indicators = ~host;~spacer;~session;~power;~layout'\\n\
+    'indicators = ~host;~spacer;~session;~power;~layout;~a11y'\\n\
+    'keyboard = onboard'\\n\
+    'a11y-states = ~keyboard'\\n\
     'position = 50%,center 65%,center'\\n\
     ''\\n | sed 's/^ //;s/^-ne //'>/etc/lightdm/lightdm-gtk-greeter.conf
   ;;
