@@ -1,4 +1,10 @@
-lightdm-gtk-greeter-mx17 (0.1.4) mx; urgency=medium
+lightdm-gtk-greeter-mx17 (0.1.5) mx; urgency=medium
+
+  * minor tweaks to configuration 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 04 Feb 2018 21:24:21 -0500
+ 
+ lightdm-gtk-greeter-mx17 (0.1.4) mx; urgency=medium
 
   * minor tweaks to configuration 
 
