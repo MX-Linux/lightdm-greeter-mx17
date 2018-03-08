@@ -1,2 +1,2 @@
 02_MX-17.conf			usr/share/lightdm/lightdm.conf.d
-lightdm-gtk-greeter.conf	etc/lightdm/mx17
+confs/*	etc/lightdm/mx17
