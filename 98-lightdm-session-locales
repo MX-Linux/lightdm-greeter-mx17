@@ -16,6 +16,12 @@ if pidof lightdm >/dev/null 2>/dev/null; then
       if [ x"$DMRC_LANG" != "x" ]; then
          export LANG="$DMRC_LANG"
          export GDM_LANG="$DMRC_LANG"
+         # papersize 
+         if [ "$LANG" = "en_US.UTF-8" ]; then
+            export PAPERSIZE="letter" 
+         else
+            export PAPERSIZE="a4"
+         fi 
       fi
    fi
 fi
