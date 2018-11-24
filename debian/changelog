@@ -1,3 +1,9 @@
+lightdm-gtk-greeter-mx17 (18.11.02) mx; urgency=medium
+
+  * papersize fix (a4 for non-US locales) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 23 Nov 2018 20:54:40 -0500
+
 lightdm-gtk-greeter-mx17 (18.11.01) mx; urgency=medium
 
   * update for mx18 
