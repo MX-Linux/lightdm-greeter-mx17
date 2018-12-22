@@ -16,12 +16,15 @@ if pidof lightdm >/dev/null 2>/dev/null; then
       if [ x"$DMRC_LANG" != "x" ]; then
          export LANG="$DMRC_LANG"
          export GDM_LANG="$DMRC_LANG"
-         # papersize 
-         if [ "$LANG" = "en_US.UTF-8" ]; then
-            export PAPERSIZE="letter" 
-         else
-            export PAPERSIZE="a4"
-         fi 
+         # papersize
+         case "$(echo $(locale -c -k LC_PAPER) | sed -E -e 's/.*height=([0-9]+)[[:space:]]+width=([0-9]+).*/\1x\2/')" in
+            297x210) export PAPERSIZE="a4" 
+                     ;;
+            279x216) export PAPERSIZE="letter" 
+                     ;;
+                  *) export PAPERSIZE="letter" 
+                     ;;
+         esac
       fi
    fi
 fi
